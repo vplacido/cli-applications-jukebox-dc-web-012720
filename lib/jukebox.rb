@@ -20,7 +20,8 @@ def play(songs)
     if input.size == 1 
       puts "Playing #{songs[input-1]}"
     else 
-      puts "Playing"
+      puts "Playing #{input}"
+    end
   else 
     puts "Invalid input, please try again"
   end 
