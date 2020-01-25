@@ -14,4 +14,14 @@ def list(songs)
 end
 
 def play(songs)
-  puts ""
+  puts "Please enter a song name or number:"
+  input = gets.strip
+  if (input.to_i > 0 && input.to_i < songs.length +1) || songs.include?(input)
+    if input.size == 1 
+      puts "Playing #{songs[input-1]}"
+    else 
+      puts "Playing"
+  else 
+    puts "Invalid input, please try again"
+  end 
+end 
