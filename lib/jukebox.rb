@@ -18,7 +18,7 @@ def play(songs)
   input = gets.strip
   if (input.to_i > 0 && input.to_i < songs.length() +1) || songs.include?(input)
     if input.size == 1 
-      puts "Playing #{songs[input-1]}"
+      puts "Playing #{songs[input.to_i-1]}"
     else 
       puts "Playing #{input}"
     end
